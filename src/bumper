@@ -44,10 +44,12 @@ class LatchPublisher(rospy.Publisher, rospy.SubscribeListener):
 
 def interrupt(channel):
     if channel == bump1:
-      	bumpis=1
+        bumpis=1
+        print(bumpis)
         pub.publish(UInt8(bumpis))
     if channel == bump2:
-      	bumpis=2
+        bumpis=2
+        print(bumpis)
         pub.publish(UInt8(bumpis))
     if channel == bump3:
         bumpis=3
